@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+after_script:
+  - npm run coveralls
+cache:
+  directories:
+  - node_modules
+env:
+  global:
+  - secure: JgHYZdsaEcbrNLk31U27TiQtJk7yIljePgC2UZ1D1clJ0cZgIM6vpyHbSRZjyXsrxc3pSRcwhny/Lv58UzuvnXrez7r32uZF6qfluuGVdcoBeBXoCPPXdXESbMX9bb7vJQhJ1BOm0jOHRI6tb/0dT1TNvNbtCHI2M3vOq40T/8k=
+deploy:
+  provider: npm
+  email: "garbados@gmail.com"
+  skip_cleanup: true
+  api_key:
+    secure: Bx1+fZCSsdSYEBx1khe2gPxdEsTpTouN6YGUTmiCv83kZSCJNwjYMQmKvbfoanhxH3bU88G24Zf01sx1zi6ifUbjqsyD8g2QrR3X4YkzW4zyT6iuunzHzMyOTQzX2ESYhj5L0vHvaGWtBw/VUWRsxlBAlHzHAlCdisFDAPxxsIQ=
+  on:
+    branch: master
+    repo: garbados/couchdb-dat

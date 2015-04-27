@@ -1,0 +1,40 @@
+{
+  "name": "couchdb-dat",
+  "version": "0.0.0-semantically-released",
+  "description": "Adapter for CouchDB and dat",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint lib test index.js && mocha -R spec",
+    "html-cov": "jscoverage lib lib-cov && COVERAGE=true mocha -R html-cov > coverage.html",
+    "coveralls": "COVERAGE=true mocha -R mocha-lcov-reporter | coveralls",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garbados/couchdb-dat.git"
+  },
+  "keywords": [
+    "couchdb",
+    "dat",
+    "nosql"
+  ],
+  "author": "Diana Thayer <me@dianathayer.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garbados/couchdb-dat/issues"
+  },
+  "homepage": "https://github.com/garbados/couchdb-dat",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "jscoverage": "^0.5.9",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2",
+    "nock": "^1.7.1",
+    "semantic-release": "^3.2.0"
+  },
+  "dependencies": {
+    "nano": "^6.1.2"
+  }
+}
