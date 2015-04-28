@@ -9,6 +9,10 @@ Adapter between [dat](http://dat-data.com/) and [CouchDB](http://couchdb.apache.
 
     npm install --save couchdb-dat
 
+## Usage
+
+TODO
+
 ## Testing
 
     git clone https://github.com/garbados/couchdb-dat.git
